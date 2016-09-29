@@ -1,8 +1,8 @@
 header {
   width: 100%;
   height: 400px;
-  background: #ed6300;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #ed6300; }
 
 .menu__wrapper {
   width: 100%;
@@ -10,24 +10,24 @@ header {
   border-bottom: 1px solid #f28934; }
 
 .wrapper__logo {
+  float: left;
   width: 180px;
-  padding-left: 100px;
   padding-top: 7px;
-  float: left; }
+  padding-left: 100px; }
 
 .menu__wrapper img {
   width: 178px;
   height: 59px; }
 
 .mainMenu__wrapper {
-  margin: auto;
   width: 448px;
+  margin: auto;
   padding-top: 33px; }
 
 .topMenu {
-  list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 .topMenu li {
   float: left; }
@@ -36,32 +36,61 @@ header {
   background-color: #ec9137; }
 
 .topMenu > li > a {
-  font-size: 24px;
-  line-height: 18px;
-  color: #fff;
+  padding: 12px 15px;
   text-decoration: none;
+  color: #fff;
+  font-size: 24px;
   font-weight: 100;
-  padding: 12px 15px; }
+  line-height: 18px; }
 
 #sideMenu {
+  float: right;
   width: 54px;
-  padding-right: 30px;
   margin: -12px auto;
-  cursor: pointer;
-  float: right; }
+  padding-right: 30px;
+  cursor: pointer; }
 
 .wrapper__icon {
   color: #fff;
   font-size: 45px; }
 
 .tagline {
-  margin: 0 auto;
-  width: 700px; }
+  width: 700px;
+  margin: 0 auto; }
 
 .tagline p {
+  text-align: center;
   color: #fff;
-  font-size: 40px;
-  text-align: center; }
+  font-size: 40px; }
 
 header button {
   margin-left: 10%; }
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+  background: grey;
+  height: 600px;
+  text-align: center; }
+
+.about h1 {
+  font-size: 50px; }
+
+.contact__wrapper {
+  margin: 25px 50px 0px 50px;
+  width: 400px;
+  height: 450px;
+  display: inline-block;
+  background: white; }
+
+.contact--photo {
+  margin: 20px auto;
+  width: 300px;
+  height: 300px;
+  background: grey; }
+
+.contact--desc {
+  margin: 20px auto;
+  width: 300px;
+  height: 80px;
+  background: grey; }
