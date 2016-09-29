@@ -66,6 +66,22 @@ header {
 header button {
   margin-left: 10%; }
 
+.projects {
+  width: 100%;
+  height: 300px;
+  background: aliceblue;
+  text-align: left; }
+
+.projects__wrapper {
+  display: inline-block;
+  margin-left: 40px; }
+
+.projects__wrapper li {
+  padding-top: 20px; }
+
+.projects__wrapper li button {
+  margin-left: 20px; }
+
 .about {
   width: 100%;
   margin: 0 auto;
