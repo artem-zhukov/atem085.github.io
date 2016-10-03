@@ -1,3 +1,15 @@
+p, h1, h3, h5 {
+  font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 header {
   width: 100%;
   height: 400px;
@@ -5,6 +17,131 @@ header {
 
   background: #ed6300;
 }
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+nav {
+  background-color: #242830;
+  margin-top: -1px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  padding-left: 0;
+  position: relative;
+}
+
+nav ul li:last-child {
+  border: none;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  padding: 20px;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  padding-left: 0;
+  position: relative;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+#nav-toggle {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #353535;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
+
+.navicon {
+  position: relative;
+  height: 26px;
+}
+
+.indicator {
+  position: absolute;
+  right: 0 !important;
+}
+
+.pull {
+  display: none;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
 
 .menu__wrapper {
   width: 100%;
@@ -92,8 +229,109 @@ header button {
   margin-left: 10%;
 }
 
+/* ==========================================================================
+CanDo
+========================================================================== */
 
-.projects{
+.canDo {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+.wrapper__parallax {
+  width: 100%;
+  height: 400px;
+  background: rgba(27, 8, 45, 0.5);
+  position: relative;
+}
+
+.parallax-window {
+  margin-top: 88px;
+  min-height: 400px;
+  background: transparent;
+}
+
+.wrapper__canDoIcon {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  margin-top: -125px;
+}
+
+.wrapper__canDoIcon p {
+  color: white;
+  font-size: 20px;
+}
+
+#web {
+  left: 50%;
+  margin-left: -450px;
+}
+
+#tester {
+  left: 50%;
+  margin-left: 150px;
+}
+
+.icon {
+  height: 175px;
+  width: 175px;
+  line-height: 175px;
+  max-width: 100%;
+  background: #ed6300;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: block;
+  color: #fff;
+  font-size: 55px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+/* ==========================================================================
+How it works
+========================================================================== */
+
+.howItWorks {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.howItWorks ol {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.howItWorks ol li {
+  margin-left: 35px;
+}
+
+.starPoint, .doubleStarPoint {
+  list-style-type: none;
+}
+
+.starPoint li:before {
+  content: "* ";
+  margin-left: -35px;
+}
+
+.doubleStarPoint li:before {
+  content: "**";
+  margin-left: -35px;
+}
+
+/* ==========================================================================
+Projects
+========================================================================== */
+
+.projects {
   width: 100%;
   height: 300px;
 
@@ -102,23 +340,25 @@ header button {
   background: aliceblue;
 }
 
-
-.projects__wrapper{
+.projects__wrapper {
   display: inline-block;
 
   margin-left: 40px;
 }
 
-.projects__wrapper li{
+.projects__wrapper li {
   padding-top: 20px;
 }
 
-.projects__wrapper li button{
+.projects__wrapper li button {
   margin-left: 20px;
 }
 
+/* ==========================================================================
+About us
+========================================================================== */
 
-.about{
+.about {
   width: 100%;
   height: 600px;
   margin: 0 auto;
@@ -128,34 +368,45 @@ header button {
   background: grey;
 }
 
-.about h1{
-  font-size: 50px;
-}
-
-.contact__wrapper{
+.contact__wrapper {
   display: inline-block;
 
-  width: 400px;
-  height: 450px;
+  width: 260px;
+  height: 400px;
+
   margin: 25px 50px 0px 50px;
 
   background: white;
 }
 
-.contact--photo{
-  width: 300px;
-  height: 300px;
+.contact--photo {
+  width: 250px;
+  height: 300px;
+
   margin: 20px auto;
 
+}
+
+.contact--desc {
+  width: 250px;
+  height: 50px;
+
+  margin: 20px auto;
   background: grey;
 }
 
-.contact--desc{
-  width: 300px;
-  height: 80px;
-  margin: 20px auto;
-
-  background: grey;
+#fstContact .contact--photo {
+  background: url("../img/Hanna.png") no-repeat;
+  background-size: contain;
 }
 
+#scdContact .contact--photo {
+  background: url("../img/Daria.jpg") no-repeat;
+  background-size: contain;
+}
+
+#thdContact .contact--photo {
+  background: url("../img/Lidia.jpg") no-repeat;
+  background-size: contain;
+}
 

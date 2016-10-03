@@ -5,10 +5,30 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/icons.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <title>JunFarm</title>
 </head>
 <body>
 <header>
+    <nav>
+        <div class="wrapper__fluidMenu">
+            <nav class="pull">
+                <ul>
+                    <li><a href="#canDo">Наши IT специалисты могут сделать <span class="indicator"><i
+                            class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Опис скилов <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                    </li>
+                    <li><a href="#howItWorks">Как это работает <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                    </li>
+                    <li><a href="#projects">Проекты <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                    </li>
+                    <li><a href="#about">О нас <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Контакти <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Отзывы <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
     <div class="menu__wrapper">
         <div class="wrapper__logo">
             <img src="img/logo.png" alt="Logo">
@@ -21,9 +41,11 @@
                 <li><a href="#">Отзывы</a></li>
             </ul>
         </div>
-           <div id="sideMenu" class="wrapper__icon" onclick="addMenu()">
-               <div class="material-icons-dehaze"></div>
-           </div>
+        <div class="col-md-12 text-right navicon">
+        <div id="nav-toggle" class="nav_slide_button" href="#">
+            <span></span>
+        </div>
+        </div>
     </div>
     <div class="tagline">
         <p>safe your time with junfarm </br> it помощь Вашему проекту и бизнесу </p>
@@ -31,23 +53,99 @@
     <button>Найти талант</button>
 </header>
 
-<div class="projects">
+
+<div id="canDo" class="canDo">
+    <h1>Наши IT специалисты могут сделать:</h1>
+    <div class="wrapper__parallax">
+        <div id="web" class="wrapper__canDoIcon">
+            <div class="icon">
+                <i class="fa fa-code shadow"></i>
+            </div>
+            <p>Верстка сайтов</p>
+        </div>
+        <div id="tester" class="wrapper__canDoIcon">
+            <div class="icon">
+                <i class="fa fa-laptop shadow"></i>
+            </div>
+            <p>Тестирование</p>
+        </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/canDo.jpg"></div>
+    </div>
+</div>
+
+<div id="howItWorks" class="howItWorks">
+    <h1>Как это работает</h1>
+    <br>
+    <h3>Для Роботодавців/Замовників</h3>
+    <ol>
+        <li>Заповни заявку та опиши що потрібно зробити</li>
+        <li>Заявку отримує та оброблює JunFarm</li>
+        <li>JunFаrm зв’язується для уточнення деталей та підтвердження початку пошуку</li>
+        <li>Після узгодження усіх нюансів та деталей щодо бажаного кандидата спеціалісти Career Service починають відбір
+            кандидатів з бази студентів GoIT.
+            Підбір кандидатів триває від кількох годин та до 3-х робочих днів. Все залежить від складності вакансії та
+            потреб роботодавця
+        </li>
+        <li>За результатами відбору роботодавцю буде надана узгоджена кількість резюме найбільш підходящих
+            кандидатів.*
+        </li>
+        <li>Роботодавець повідомляє щодо результату співбесід з кандидатами.**</li>
+    </ol>
+    <ol class="starPoint">
+        <li>У випадку якщо запропоновані кандидати не влаштовують роботодавця, Career Service проводить додатковий
+            підбір кандидатів
+        </li>
+    </ol>
+    <ol class="doubleStarPoint">
+        <li>У випадку якщо кандидату відмовиться від пропозиції роботодавця з незалежних від работодавця обставин,
+            Career Service проводить додатковий підбір кандидатів
+        </li>
+    </ol>
+</div>
+
+<div id="projects" class="projects">
     <div class="projects__wrapper">
         <ul>
-            <li>Проект 1 <button>Зарегистрироваться</button></li>
-            <li>Проект 2 <button>Зарегистрироваться</button></li>
-            <li>Проект 3 <button>Зарегистрироваться</button></li>
-            <li>Проект 4 <button>Зарегистрироваться</button></li>
+            <li>Проект 1
+                <button>Зарегистрироваться</button>
+            </li>
+            <li>Проект 2
+                <button>Зарегистрироваться</button>
+            </li>
+            <li>Проект 3
+                <button>Зарегистрироваться</button>
+            </li>
+            <li>Проект 4
+                <button>Зарегистрироваться</button>
+            </li>
         </ul>
     </div>
 </div>
 
 
-<div class="about">
+<div id="about" class="about">
     <h1>О нас</h1>
-    <div class="contact__wrapper">
+    <div id="fstContact" class="contact__wrapper">
         <div class="contact--photo"></div>
-        <div class="contact--desc"></div>
+        <div class="contact--desc">
+            <h4>Anna Nikolaieva</h4>
+            <h5>Partner Relationship Manager <br> (Kyiv and South-East region)</h5>
+        </div>
+    </div>
+    <div id="scdContact" class="contact__wrapper">
+        <div class="contact--photo"></div>
+        <div class="contact--desc">
+            <h4>Daria Bielinska</h4>
+            <h5>Partner Relationship Manager <br>(Kyiv and West region)</h5>
+        </div>
+    </div>
+    <div id="thdContact" class="contact__wrapper">
+        <div class="contact--photo"></div>
+        <div class="contact--desc">
+            <h4>Lidiya Terpel</h4>
+            <h5>Career service Team Lead</h5>
+            <p><BR></p>
+        </div>
     </div>
     <div class="contact__wrapper">
         <div class="contact--photo"></div>
@@ -58,5 +156,8 @@
         <div class="contact--desc"></div>
     </div>
 </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/parallax.js/parallax.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
