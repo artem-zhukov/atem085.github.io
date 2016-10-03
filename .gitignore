@@ -47,6 +47,5 @@ build/Release
 .bower-registry
 .bower-tmp
 
-**/libs
 **/client_build/
 **/csscomb/
