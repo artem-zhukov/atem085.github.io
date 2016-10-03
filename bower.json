@@ -1,0 +1,15 @@
+{
+  "name": "tst",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "atem85 <artem.i.zhukov@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/atem085",
+  "moduleType": [],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "parallax.js": "^1.4.2"
+  }
+}
