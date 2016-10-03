@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var csscomb = require('gulp-csscomb');
+var bower = require('gulp-bower');
 
 
 gulp.task('default', ['watch']);
@@ -14,6 +15,10 @@ gulp.task('css', function () {
 
 gulp.task( 'watch', function () {
     gulp.watch('styles/*.scss', [ 'css' ] );
+});
+
+gulp.task('bower', function () {
+    return bower('libs');
 });
 
 //CODESTYLE
