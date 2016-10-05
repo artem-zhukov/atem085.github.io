@@ -1,4 +1,4 @@
-p, h1, h3, h5 {
+p, h1, h3, h4, h5, a {
   font-family: "Helvetic Neue", Helvetica, Arial; }
 
 h1 {
@@ -237,6 +237,106 @@ CanDo
   margin: 0 auto 50px; }
 
 /* ==========================================================================
+Our team
+http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
+========================================================================== */
+.ourTeam {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: yellow; }
+
+/* Carousel */
+.container_car {
+  position: relative;
+  overflow: hidden; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  padding: 0px 30px; }
+
+.carousel, .carousel_mask {
+  width: 1000px; }
+
+.carousel_btn_left, .carousel_btn_right {
+  display: none;
+  position: absolute;
+  background: url("../img/slider-left.png") no-repeat 0px 0px;
+  width: 29px;
+  height: 56px;
+  top: 50px; }
+
+.carousel_btn_left {
+  left: -10px; }
+
+.carousel_btn_right {
+  background: url("../img/slider-right.png") no-repeat 0px 0px;
+  right: 10px; }
+
+.carousel_btn_left:active, .carousel_btn_right:active {
+  margin-top: 1px; }
+
+.carousel_btn_left, .carousel_btn_right {
+  display: block !important; }
+
+.carousel_mask {
+  position: relative;
+  overflow: hidden !important; }
+
+.carousel ul.carousel_items {
+  position: relative;
+  margin: 0px; }
+
+.carousel ul.carousel_items li {
+  float: left;
+  margin-right: 19px; }
+
+.carousel ul.carousel_items li img {
+  width: 300px;
+  height: 300px; }
+
+.img_frame {
+  display: inline-block;
+  margin: 4px;
+  padding: 5px;
+  background-color: #fff;
+  line-height: 0px;
+  border: 1px solid #c0c1c2;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12); }
+
+.img_frame .container_car ul {
+  position: absolute; }
+
+.img_frame .container_car ul li {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden; }
+
+.img_frame a.description {
+  display: block;
+  padding: 5px 8px;
+  /*  background-color: #ffd86a;*/
+  color: #555;
+  line-height: 16px;
+  font-size: 12px;
+  text-decoration: none; }
+
+.img_frame a.description h4 {
+  padding: 0px; }
+
+/* ==========================================================================
 How it works
 ========================================================================== */
 .howItWorks {
@@ -320,3 +420,85 @@ About us
 #thdContact .contact--photo {
   background: url("../img/Lidia.jpg") no-repeat;
   background-size: contain; }
+
+/* ==========================================================================
+Contacts
+========================================================================== */
+.contacts {
+  width: 100%;
+  height: 200px; }
+
+.contacts .wrapper__contacts {
+  margin: 20px auto;
+  width: 1000px; }
+
+.contacts .wrapper__contacts div {
+  float: left;
+  margin-right: 20px; }
+
+.contacts .wrapper__contacts .social {
+  background: orange;
+  width: 100px;
+  height: 100px; }
+
+/* ==========================================================================
+Reviews
+========================================================================== */
+.reviews {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: white; }
+
+/* Carousel */
+.reviews .carousel ul.carousel_items li img {
+  width: 200px;
+  height: 200px; }
+
+.reviews .container_car {
+  margin: 15px auto;
+  margin-bottom: 25px; }
+
+.reviews .container_car ul {
+  width: 200px;
+  margin: 0 auto;
+  list-style-type: none; }
+
+.reviews .container_car ul li {
+  height: 200px;
+  border-radius: 100px; }
+
+.reviews-img_frame {
+  width: 300px;
+  height: 550px;
+  display: inline-block;
+  margin: 4px;
+  padding: 5px;
+  line-height: 0px;
+  background-color: #f8f8f8;
+  border: none;
+  border-bottom: 3px solid #ed6300;
+  box-shadow: none; }
+
+.reviews-img_frame p {
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px; }
+
+.reviews .sh {
+  text-decoration: none;
+  color: #ed6300;
+  float: right;
+  margin: 20px 10px 0 0;
+  display: none; }
+
+.reviews .sh:hover {
+  text-decoration: underline;
+  color: #0000cc; }
+
+.reviews .container-image {
+  border-radius: 100px;
+  background: greenyellow;
+  overflow: hidden; }

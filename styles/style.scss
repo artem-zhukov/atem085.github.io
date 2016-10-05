@@ -1,4 +1,4 @@
-p, h1, h3, h5 {
+p, h1, h3,h4, h5, a {
   font-family: "Helvetic Neue", Helvetica, Arial;
 }
 
@@ -14,7 +14,6 @@ header {
   width: 100%;
   height: 400px;
   margin: 0 auto;
-
   background: #ed6300;
 }
 
@@ -61,7 +60,7 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a:focus {
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 
 #nav-toggle {
@@ -142,17 +141,14 @@ nav ul li a:hover, nav ul li a:focus {
 /* ==========================================================================
 Header
 ========================================================================== */
-
 .menu__wrapper {
   width: 100%;
   height: 80px;
-
   border-bottom: 1px solid #f28934;
 }
 
 .wrapper__logo {
   float: left;
-
   width: 180px;
   padding-top: 7px;
   padding-left: 100px;
@@ -172,7 +168,6 @@ Header
 .topMenu {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -186,11 +181,8 @@ Header
 
 .topMenu > li > a {
   padding: 12px 15px;
-
   text-decoration: none;
-
   color: #fff;
-
   font-size: 24px;
   font-weight: 100;
   line-height: 18px;
@@ -198,17 +190,14 @@ Header
 
 #sideMenu {
   float: right;
-
   width: 54px;
   margin: -12px auto;
   padding-right: 30px;
-
   cursor: pointer;
 }
 
 .wrapper__icon {
   color: #fff;
-
   font-size: 45px;
 }
 
@@ -219,9 +208,7 @@ Header
 
 .tagline p {
   text-align: center;
-
   color: #fff;
-
   font-size: 40px;
 }
 
@@ -232,7 +219,6 @@ header button {
 /* ==========================================================================
 CanDo
 ========================================================================== */
-
 .canDo {
   width: 100%;
   height: 600px;
@@ -295,9 +281,129 @@ CanDo
 }
 
 /* ==========================================================================
-How it works
+Our team
+http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 ========================================================================== */
 
+.ourTeam {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: yellow;
+}
+
+/* Carousel */
+.container_car {
+  position: relative;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.carousel, .carousel_mask {
+  width: 1000px;
+}
+
+.carousel_btn_left, .carousel_btn_right {
+  display: none;
+  position: absolute;
+  background: url("../img/slider-left.png") no-repeat 0px 0px;
+  width: 29px;
+  height: 56px;
+  top: 50px;
+}
+
+.carousel_btn_left {
+  left: -10px;
+}
+
+.carousel_btn_right {
+  background: url("../img/slider-right.png") no-repeat 0px 0px;
+  right: 10px;
+}
+
+.carousel_btn_left:active, .carousel_btn_right:active {
+  margin-top: 1px;
+}
+
+.carousel_btn_left, .carousel_btn_right {
+  display:block !important;
+}
+
+.carousel_mask {
+  position: relative;
+  overflow: hidden !important;
+}
+
+
+.carousel ul.carousel_items {
+  position: relative;
+  margin: 0px;
+}
+
+.carousel ul.carousel_items li {
+  float: left;
+  margin-right: 19px;
+}
+
+.carousel ul.carousel_items li img {
+  width: 300px;
+  height: 300px;
+}
+
+.img_frame {
+  display: inline-block;
+  margin: 4px;
+  padding: 5px;
+  background-color: #fff;
+  line-height: 0px;
+  border: 1px solid #c0c1c2;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.img_frame .container_car ul {
+  position: absolute;
+}
+
+.img_frame .container_car ul li {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img_frame a.description {
+  display: block;
+  padding: 5px 8px;
+/*  background-color: #ffd86a;*/
+  color: #555;
+  line-height: 16px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.img_frame a.description h4 {
+  padding: 0px;
+}
+
+/* ==========================================================================
+How it works
+========================================================================== */
 .howItWorks {
   width: 100%;
   height: 400px;
@@ -330,19 +436,15 @@ How it works
 /* ==========================================================================
 Projects
 ========================================================================== */
-
 .projects {
   width: 100%;
   height: 300px;
-
   text-align: left;
-
   background: aliceblue;
 }
 
 .projects__wrapper {
   display: inline-block;
-
   margin-left: 40px;
 }
 
@@ -357,40 +459,31 @@ Projects
 /* ==========================================================================
 About us
 ========================================================================== */
-
 .about {
   width: 100%;
   height: 600px;
   margin: 0 auto;
-
   text-align: center;
-
   background: grey;
 }
 
 .contact__wrapper {
   display: inline-block;
-
   width: 260px;
   height: 400px;
-
   margin: 25px 50px 0px 50px;
-
   background: white;
 }
 
 .contact--photo {
   width: 250px;
   height: 300px;
-
   margin: 20px auto;
-
 }
 
 .contact--desc {
   width: 250px;
   height: 50px;
-
   margin: 20px auto;
   background: grey;
 }
@@ -410,3 +503,103 @@ About us
   background-size: contain;
 }
 
+/* ==========================================================================
+Contacts
+========================================================================== */
+
+.contacts{
+  width: 100%;
+  height:200px;
+
+}
+
+.contacts .wrapper__contacts{
+  margin: 20px auto;
+  width: 1000px;
+}
+
+.contacts .wrapper__contacts div{
+  float: left;
+  margin-right: 20px;
+}
+
+.contacts .wrapper__contacts .social{
+  background: orange;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/* ==========================================================================
+Reviews
+========================================================================== */
+
+.reviews{
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+}
+
+/* Carousel */
+
+.reviews .carousel ul.carousel_items li img{
+  width: 200px;
+  height: 200px;
+}
+.reviews .container_car{
+  margin: 15px auto;
+  margin-bottom: 25px;
+}
+
+.reviews .container_car ul{
+  width: 200px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.reviews .container_car ul li{
+  height: 200px;
+  border-radius: 100px;
+}
+
+.reviews-img_frame {
+  width: 300px;
+  height: 550px;
+  display: inline-block;
+  margin: 4px;
+  padding: 5px;
+  line-height: 0px;
+  background-color: #f8f8f8;
+  border: none;
+  border-bottom: 3px solid #ed6300;
+  box-shadow:none;
+}
+
+.reviews-img_frame p {
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.reviews .sh{
+  text-decoration: none;
+  color: #ed6300;
+  float: right;
+  margin: 20px 10px 0 0;
+  display: none;
+}
+
+.reviews .sh:hover{
+  text-decoration: underline;
+  color: #0000cc;
+}
+
+.reviews .container-image{
+  border-radius: 100px;
+  background: greenyellow;
+  overflow: hidden;
+}
