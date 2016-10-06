@@ -17,6 +17,11 @@ header {
   background: #ed6300;
 }
 
+.mainFrame{
+  width: 1150px;
+  margin: 0 auto;
+}
+
 /* ==========================================================================
 Navigation
 ========================================================================== */
@@ -314,7 +319,7 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 }
 
 .carousel, .carousel_mask {
-  width: 1000px;
+  width: 1045px;
 }
 
 .carousel_btn_left, .carousel_btn_right {
@@ -327,12 +332,12 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 }
 
 .carousel_btn_left {
-  left: -10px;
+  left: -22px;
 }
 
 .carousel_btn_right {
   background: url("../img/slider-right.png") no-repeat 0px 0px;
-  right: 10px;
+  right: -14px;
 }
 
 .carousel_btn_left:active, .carousel_btn_right:active {
@@ -356,17 +361,17 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 
 .carousel ul.carousel_items li {
   float: left;
-  margin-right: 19px;
+  margin: 0 8px 0 8px;
 }
 
 .carousel ul.carousel_items li img {
-  width: 300px;
+  width: 320px;
   height: 300px;
 }
 
 .img_frame {
   display: inline-block;
-  margin: 4px;
+  margin: 0px;
   padding: 5px;
   background-color: #fff;
   line-height: 0px;
@@ -438,7 +443,7 @@ Projects
 ========================================================================== */
 .projects {
   width: 100%;
-  height: 300px;
+  min-height: 100px;
   text-align: left;
   background: aliceblue;
 }
@@ -446,14 +451,16 @@ Projects
 .projects__wrapper {
   display: inline-block;
   margin-left: 40px;
+  padding-bottom: 20px;
 }
 
 .projects__wrapper li {
   padding-top: 20px;
 }
 
-.projects__wrapper li button {
+.projects__wrapper li input {
   margin-left: 20px;
+
 }
 
 /* ==========================================================================
@@ -469,38 +476,37 @@ About us
 
 .contact__wrapper {
   display: inline-block;
-  width: 260px;
-  height: 400px;
-  margin: 25px 50px 0px 50px;
+  width: 200px;
+  height: 315px;
+  margin: 25px 13px 0px 13px;
   background: white;
 }
 
 .contact--photo {
-  width: 250px;
-  height: 300px;
-  margin: 20px auto;
+  width: 190px;
+  height: 190px;
+  margin: 15px auto;
 }
 
 .contact--desc {
-  width: 250px;
+  width: 200px;
   height: 50px;
-  margin: 20px auto;
-  background: grey;
+  margin: 0px auto;
 }
 
 #fstContact .contact--photo {
   background: url("../img/Hanna.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #scdContact .contact--photo {
   background: url("../img/Daria.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #thdContact .contact--photo {
   background: url("../img/Lidia.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* ==========================================================================
@@ -510,7 +516,7 @@ Contacts
 .contacts{
   width: 100%;
   height:200px;
-
+  background: url("../img/map.jpg");
 }
 
 .contacts .wrapper__contacts{
@@ -521,6 +527,10 @@ Contacts
 .contacts .wrapper__contacts div{
   float: left;
   margin-right: 20px;
+  margin-top: 61px;
+  color: #f28934;
+  line-height: 20px;
+  height: 78px;
 }
 
 .contacts .wrapper__contacts .social{
@@ -566,10 +576,10 @@ Reviews
 }
 
 .reviews-img_frame {
-  width: 300px;
+  width: 320px;
   height: 550px;
   display: inline-block;
-  margin: 4px;
+  margin: 3px;
   padding: 5px;
   line-height: 0px;
   background-color: #f8f8f8;
@@ -602,4 +612,8 @@ Reviews
   border-radius: 100px;
   background: greenyellow;
   overflow: hidden;
+}
+
+.reviews ul.carousel_items li ul li {
+  margin: 0;
 }

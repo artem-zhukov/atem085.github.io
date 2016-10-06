@@ -1,7 +1,7 @@
 function img_frame_hover(){
     jQuery(".ourTeam .img_frame").hover(
         function () {
-            description_height = 300 /*jQuery(this).find(".description").height() + 10*/;
+            description_height = 320 /*jQuery(this).find(".description").height() + 10*/;
             jQuery("ul", this).not(':animated').animate({top: -description_height}, 'fast')
         },
         function () {
@@ -87,7 +87,7 @@ jQuery(function(){
         if (str == teamCarousel) {
             carouselData.teamCarousel.ul_position = jQuery(str +" ul.carousel_items").position();
             if (carouselData.teamCarousel.ul_position.left < 0) {
-                jQuery(str + " ul.carousel_items").not(':animated').animate({left: '+=335'}, {
+                jQuery(str + " ul.carousel_items").not(':animated').animate({left: '+=349'}, {
                     duration: 'slow',
                     easing: 'easeOutExpo'
                 });
@@ -96,7 +96,7 @@ jQuery(function(){
             carouselData.reviewCarousel.ul_position = jQuery(str +" ul.carousel_items").position();
 
             if (carouselData.reviewCarousel.ul_position.left < 0) {
-                jQuery(str + " ul.carousel_items").not(':animated').animate({left: '+=335'}, {
+                jQuery(str + " ul.carousel_items").not(':animated').animate({left: '+=349'}, {
                     duration: 'slow',
                     easing: 'easeOutExpo'
                 });
@@ -121,7 +121,7 @@ jQuery(function(){
         var current_position = ul_width - (-ul_position.left) - carouselWidth;*/
 
         if(carouselData.teamCarousel.current_position > 0){
-            jQuery(str +" ul.carousel_items").not(':animated').animate({ left: '-=335' }, {
+            jQuery(str +" ul.carousel_items").not(':animated').animate({ left: '-=349' }, {
                 duration: 'slow',
                 easing: 'easeOutExpo'});
         }
@@ -133,7 +133,7 @@ jQuery(function(){
             carouselData.reviewCarousel.current_position = carouselData.reviewCarousel.ul_width -(-carouselData.reviewCarousel.ul_position.left) - carouselData.reviewCarousel.carouselWidth;
 
             if(carouselData.reviewCarousel.current_position > 0){
-                jQuery(str +" ul.carousel_items").not(':animated').animate({ left: '-=335' }, {
+                jQuery(str +" ul.carousel_items").not(':animated').animate({ left: '-=349' }, {
                     duration: 'slow',
                     easing: 'easeOutExpo'});
             }
