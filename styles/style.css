@@ -434,7 +434,7 @@ Contacts
   background: url("../img/map.jpg"); }
 
 .contacts .wrapper__contacts {
-  margin: 20px auto;
+  margin: 0 auto;
   width: 1000px; }
 
 .contacts .wrapper__contacts div {
@@ -446,9 +446,17 @@ Contacts
   height: 78px; }
 
 .contacts .wrapper__contacts .social {
-  background: orange;
-  width: 100px;
-  height: 100px; }
+  margin-top: 61px;
+  width: 200px;
+  height: 20px; }
+
+.contacts .social a {
+  color: #f28934; }
+
+.contacts .social ul li {
+  margin-left: 10px;
+  float: left;
+  list-style-type: none; }
 
 /* ==========================================================================
 Reviews
