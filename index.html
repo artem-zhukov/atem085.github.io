@@ -12,61 +12,67 @@
 </head>
 <body>
 <header>
-    <nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                    <nav class="pull">
-                        <ul class="top-nav">
-                            <li><a href="#canDo">Наши IT специалисты могут сделать <span class="indicator"><i
-                                    class="fa fa-angle-right"></i></span></a></li>
-                            <li><a href="#">Опис скилов <span class="indicator"><i
-                                    class="fa fa-angle-right"></i></span></a>
-                            </li>
-                            <li><a href="#howItWorks">Как это работает <span class="indicator"><i
-                                    class="fa fa-angle-right"></i></span></a>
-                            </li>
-                            <li><a href="#projects">Проекты <span class="indicator"><i
-                                    class="fa fa-angle-right"></i></span></a>
-                            </li>
-                            <li><a href="#about">О нас <span class="indicator"><i
-                                    class="fa fa-angle-right"></i></span></a>
-                            </li>
-                            <li><a href="#">Контакти <span class="indicator"><i
-                                    class="fa fa-angle-right"></i></span></a></li>
-                            <li><a href="#">Отзывы <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
-                            </li>
-                        </ul>
-                    </nav>
+    <div class="mainFrame">
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <nav class="pull">
+                            <ul class="top-nav">
+                                <li><a href="#canDo">Наши IT специалисты могут сделать <span class="indicator"><i
+                                        class="fa fa-angle-right"></i></span></a></li>
+                                <li><a href="#">Опис скилов <span class="indicator"><i
+                                        class="fa fa-angle-right"></i></span></a>
+                                </li>
+                                <li><a href="#howItWorks">Как это работает <span class="indicator"><i
+                                        class="fa fa-angle-right"></i></span></a>
+                                </li>
+                                <li><a href="#projects">Проекты <span class="indicator"><i
+                                        class="fa fa-angle-right"></i></span></a>
+                                </li>
+                                <li><a href="#about">О нас <span class="indicator"><i
+                                        class="fa fa-angle-right"></i></span></a>
+                                </li>
+                                <li><a href="#">Контакти <span class="indicator"><i
+                                        class="fa fa-angle-right"></i></span></a></li>
+                                <li><a href="#">Отзывы <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <div class="wrapper__topMenu">
+        <div class="menu__wrapper">
+            <div class="wrapper__logo">
+                <img src="img/JunFarmlogo.png" alt="Logo">
+            </div>
+            <div class="mainMenu__wrapper">
+                <ul class="topMenu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12 text-right navicon">
+                <div id="nav-toggle" class="nav_slide_button" href="#">
+                    <span></span>
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="menu__wrapper">
-        <div class="wrapper__logo">
-            <img src="img/logo.png" alt="Logo">
-        </div>
-        <div class="mainMenu__wrapper">
-            <ul class="topMenu">
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Проекты</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Отзывы</a></li>
-            </ul>
-        </div>
-        <div class="col-md-12 text-right navicon">
-            <div id="nav-toggle" class="nav_slide_button" href="#">
-                <span></span>
-            </div>
-        </div>
     </div>
+
     <div class="tagline">
         <p>safe your time with junfarm </br> it помощь Вашему проекту и бизнесу </p>
     </div>
     <button>Найти талант</button>
 </header>
 <section id="canDo" class="canDo">
-    <div class="wrapper">
+<!--    <div class="mainFrame">-->
         <h1>Наши IT специалисты могут сделать:</h1>
         <div class="wrapper__parallax">
             <div id="web" class="wrapper__canDoIcon">
@@ -83,7 +89,7 @@
             </div>
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/canDo.jpg"></div>
         </div>
-    </div>
+<!--    </div>-->
 </section>
 
 <section class="ourTeam">
@@ -227,28 +233,36 @@
         <div class="projects__wrapper">
             <ul>
                 <li>Проект 1
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 2
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 3
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 4
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 1
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 2
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 3
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
                 <li>Проект 4
-                    <input type="button" value="Зарегистрироваться" onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
+                    <input type="button" value="Зарегистрироваться"
+                           onclick="window.open('//docs.google.com/forms/d/1WeJB09vMiy-9aOBM2DxHih0JLamd79ez35EI1vlRvao/viewform?edit_requested=true')"/>
                 </li>
             </ul>
         </div>
@@ -295,7 +309,7 @@
     </div>
 </section>
 
-<section class="contacts">
+<section id="contacts" class="contacts">
     <div class="mainFrame">
         <div class="wrapper__contacts">
             <!--   <div class="contacts__map">
@@ -319,18 +333,23 @@
             </div>
             <div class="social">
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="https://www.facebook.com/goITclub" target="_blank"><i class="pe-so-facebook pe-bg pe-hover pe-2x"></i></a></li>
-                    <li><a href="https://twitter.com/goITclub" target="_blank"><i class="pe-so-twitter pe-bg pe-hover pe-2x"></i></a></li>
-                    <li><a href="https://vk.com/goitclub" target="_blank"><i class="pe-so-vk pe-bg pe-hover pe-2x"></i></a></li>
-                    <li><a href="http://www.slideshare.net/GoITClub" target="_blank"><i class="pe-so-slideshare pe-bg pe-hover pe-2x"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q" target="_blank"><i class="pe-so-youtube-1 pe-bg pe-hover pe-2x"></i></a></li>
+                    <li class="active"><a href="https://www.facebook.com/goITclub" target="_blank"><i
+                            class="pe-so-facebook pe-bg pe-hover pe-2x"></i></a></li>
+                    <li><a href="https://twitter.com/goITclub" target="_blank"><i
+                            class="pe-so-twitter pe-bg pe-hover pe-2x"></i></a></li>
+                    <li><a href="https://vk.com/goitclub" target="_blank"><i class="pe-so-vk pe-bg pe-hover pe-2x"></i></a>
+                    </li>
+                    <li><a href="http://www.slideshare.net/GoITClub" target="_blank"><i
+                            class="pe-so-slideshare pe-bg pe-hover pe-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q" target="_blank"><i
+                            class="pe-so-youtube-1 pe-bg pe-hover pe-2x"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="reviews">
+<section id="reviews" class="reviews">
     <div class="mainFrame">
         <h1>Отзывы</h1>
         <div class="wrapper__reviews">

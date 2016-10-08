@@ -17,10 +17,15 @@ header {
   background: #ed6300;
 }
 
+/*.topMenu-wrapper{
+  background: #ed6300;
+}*/
+
 .mainFrame{
   width: 1150px;
   margin: 0 auto;
 }
+
 
 /* ==========================================================================
 Navigation
@@ -132,6 +137,7 @@ nav ul li a:hover, nav ul li a:focus {
 .navicon {
   position: relative;
   height: 26px;
+  margin-top: -55px;
 }
 
 .indicator {
@@ -147,8 +153,17 @@ nav ul li a:hover, nav ul li a:focus {
 Header
 ========================================================================== */
 .menu__wrapper {
-  width: 100%;
+  width: 1150px;
   height: 80px;
+  margin: 0 auto;
+}
+
+.wrapper__topMenu{
+  width: 100%;
+  background: #ed6300;
+  position: fixed;
+  height: 80px;
+  z-index:5;
   border-bottom: 1px solid #f28934;
 }
 
@@ -156,7 +171,6 @@ Header
   float: left;
   width: 180px;
   padding-top: 7px;
-  padding-left: 100px;
 }
 
 .menu__wrapper img {
@@ -165,7 +179,8 @@ Header
 }
 
 .mainMenu__wrapper {
-  width: 448px;
+  width: 700px;
+  height: 50px;
   margin: auto;
   padding-top: 33px;
 }
@@ -181,6 +196,8 @@ Header
 }
 
 .topMenu li:hover {
+  padding: 5px;
+  margin: -5px;
   background-color: #ec9137;
 }
 
@@ -208,7 +225,7 @@ Header
 
 .tagline {
   width: 700px;
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
 .tagline p {
@@ -329,6 +346,10 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
   width: 29px;
   height: 56px;
   top: 50px;
+}
+
+.carousel_btn_left:hover, .carousel_btn_right:hover{
+  opacity: 0.6;
 }
 
 .carousel_btn_left {
