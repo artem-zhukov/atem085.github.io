@@ -3,18 +3,15 @@ p, h1, h3,h4, h5, a {
 }
 
 h1 {
-  font-size: 48px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  font-size: 48px;
 }
 
 h3 {
   font-size: 30px;
 }
-
-/*.topMenu-wrapper{
-  background: #ed6300;
-}*/
 
 .mainFrame{
   width: 1150px;
@@ -26,29 +23,36 @@ h3 {
 Navigation
 ========================================================================== */
 nav {
-  background-color: #242830;
-  margin-top: -1px;
-  left: 627px;
-  top: 29px;
   position: absolute;
+  top: 29px;
+  left: 627px;
+
   width: 219px;
+  margin-top: -1px;
+
+  background-color: #242830;
 }
 
 nav ul {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 nav ul li {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  padding-left: 0;
   position: relative;
+
+  display: block;
+
+  padding-left: 0;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
 nav ul li:last-child {
@@ -56,45 +60,56 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  padding: 8px;
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  padding-left: 0;
   position: relative;
+
+  display: block;
+
+  padding: 8px;
+  padding-left: 0;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 nav ul li a:hover, nav ul li a:focus {
   text-decoration: none;
+
   color: white;
 }
 
 #nav-toggle {
   position: absolute;
-  right: 15px;
   top: 0;
+  right: 15px;
 }
 
 #nav-toggle {
-  cursor: pointer;
   padding: 10px 35px 16px 0px;
+
+  cursor: pointer;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -o-border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #353535;
   position: absolute;
+
   display: block;
+
+  width: 35px;
+  height: 5px;
+
   content: '';
+  cursor: pointer;
+
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  background: #353535;
+
+  -o-border-radius: 1px;
 }
 
 #nav-toggle span:before {
@@ -106,10 +121,10 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 #nav-toggle.active span {
@@ -121,20 +136,22 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 #nav-toggle.active span:before {
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 #nav-toggle.active span:after {
-  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+
   -webkit-transform: translateY(-10px) rotate(-45deg);
   -ms-transform: translateY(-10px) rotate(-45deg);
-  top: 10px;
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .navicon {
   position: relative;
+
   height: 26px;
   margin-top: 10px;
 }
@@ -156,6 +173,7 @@ header {
   width: 100%;
   height: 56px;
   margin: 0 auto;
+
   background: #ed6300;
 }
 
@@ -166,15 +184,18 @@ header {
 }
 
 .wrapper__topMenu{
-  width: 100%;
-  background: #ed6300;
   position: fixed;
-  height: 56px;
   z-index:5;
+
+  width: 100%;
+  height: 56px;
+
+  background: #ed6300;
 }
 
 .wrapper__logo {
   float: left;
+
   width: 180px;
 }
 
@@ -192,14 +213,17 @@ header {
 .topMenu {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .topMenu li {
   float: left;
-  background: linear-gradient(to top, #a6206a, #af3779);
+
   padding: 15px 0 15px 0px;
+
   border-left: 2px solid #e174b1;
+  background: linear-gradient(to top, #a6206a, #af3779);
 }
 
 .topMenu li:nth-child(1){
@@ -222,8 +246,11 @@ header {
 
 .topMenu > li > a {
   padding: 10px 10px;
+
   text-decoration: none;
+
   color: #fff;
+
   font-size: 17px;
   font-weight: 100;
   line-height: 18px;
@@ -231,22 +258,19 @@ header {
 
 #sideMenu {
   float: right;
+
   width: 54px;
   margin: -12px auto;
   padding-right: 30px;
+
   cursor: pointer;
 }
 
 .wrapper__icon {
   color: #fff;
+
   font-size: 45px;
 }
-
-
-/*
-header button {
-  margin-left: 10%;
-}*/
 
 /* ==========================================================================
 TagLine
@@ -255,13 +279,17 @@ TagLine
 .tagline {
   width: 100%;
   height:250px;
+
   background: #5d5c5c;
 }
 
 .tagline p {
   padding-top: 36px;
+
   text-align: center;
+
   color: #fff;
+
   font-size: 31px;
 }
 
@@ -272,6 +300,7 @@ TagLine
 
 .tagline input{
   background: linear-gradient(to top,#fff  ,#c6c4bc);
+
   font-size: 20px;
 }
 
@@ -280,16 +309,19 @@ TagLine
 }
 
 #sendContactClient{
-  margin: 0 auto;
   display: block;
-  height: 40px;
+
   width: 100px;
+  height: 40px;
+  margin: 0 auto;
   margin-top: 18px;
-  background: linear-gradient(to top, #a6206a, #af3779);
-  font-family: "Helvetic Neue", Helvetica, Arial;
+
+  color: white;
   border: none;
   border-radius: 15px;
-  color: white;
+  background: linear-gradient(to top, #a6206a, #af3779);
+
+  font-family: "Helvetic Neue", Helvetica, Arial;
 }
 
 #sendContactClient:hover {
@@ -304,6 +336,7 @@ CanDo
 .canDo {
   width: 100%;
   min-height: 400px;
+
   text-align: center;
 }
 
@@ -312,57 +345,70 @@ CanDo
 }
 
 .wrapper__parallax {
+  position: relative;
+
   width: 100%;
   min-height: 400px;
+
   background: rgba(27, 8, 45, 0.5);
-  position: relative;
 }
 
 .parallax-window {
   height: 400px;
+
   background: transparent;
 }
 
 .wrapper__canDoIcon {
-  width: 300px;
-  min-height: 300px;
   position: absolute;
   top: 50%;
+
+  width: 300px;
+  min-height: 300px;
   margin-top: -125px;
 }
 
 .wrapper__canDoIcon p {
   color: white;
+
   font-size: 20px;
 }
 
 #web {
   left: 50%;
+
   margin-left: -450px;
 }
 
 #tester {
   left: 50%;
+
   margin-left: 150px;
 }
 
 .icon {
-  height: 175px;
-  width: 175px;
-  line-height: 175px;
-  max-width: 100%;
-  background: #ed6300;
-  border-radius: 50%;
-  -o-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+  position: relative;
+
   display: block;
-  color: #fff;
-  font-size: 55px;
+
+  width: 175px;
+  max-width: 100%;
+  height: 175px;
+  margin: 0 auto 50px;
+
   text-align: center;
   vertical-align: middle;
-  position: relative;
-  margin: 0 auto 50px;
+
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ed6300;
+
+  font-size: 55px;
+  line-height: 175px;
+
+  -o-border-radius: 50%;
 }
 
 /* ==========================================================================
@@ -373,7 +419,9 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 .ourTeam {
   width: 100%;
   height: 480px;
+
   text-align: center;
+
   background: #a6206a;
 }
 
@@ -383,24 +431,28 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 /* Carousel */
 .container_car {
   position: relative;
+
   overflow: hidden;
 }
 
 .clear {
-  clear: both;
   display: block;
-  overflow: hidden;
   visibility: hidden;
+  clear: both;
+  overflow: hidden;
+
   width: 0;
   height: 0;
 }
 
 .carousel {
   position: relative;
+
   margin: 0 auto;
   padding: 20px;
-  padding-left: 70px;
   padding-right: 51px;
+  padding-left: 70px;
+
   background: white;
 }
 
@@ -409,25 +461,25 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 }
 
 .carousel_btn_left, .carousel_btn_right {
-  display: none;
   position: absolute;
-  background: url("../img/slider-left.png") no-repeat;
+  top: 50px;
+
+  display: none;
+
   width: 62px;
   height: 76px;
-  top: 50px;
-}
 
-/*.carousel_btn_left:hover, .carousel_btn_right:hover{
-  opacity: 0.6;
-}*/
+  background: url("../img/slider-left.png") no-repeat;
+}
 
 .carousel_btn_left {
   left: -13px;
 }
 
 .carousel_btn_right {
-  background: url("../img/slider-right.png") no-repeat 0px 0px;
   right: -15px;
+
+  background: url("../img/slider-right.png") no-repeat 0px 0px;
 }
 
 .carousel_btn_left:active, .carousel_btn_right:active {
@@ -440,17 +492,20 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 
 .carousel_mask {
   position: relative;
+
   overflow: hidden !important;
 }
 
 
 .carousel ul.carousel_items {
   position: relative;
+
   margin: 0px;
 }
 
 .carousel ul.carousel_items li {
   float: left;
+
   margin: 0 8px 0 8px;
 }
 
@@ -461,14 +516,17 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 
 .img_frame {
   display: inline-block;
+
   margin: 0px;
   padding: 5px;
-  background-color: #fff;
-  line-height: 0px;
+
   border: 1px solid #c0c1c2;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  background-color: #fff;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+
+  line-height: 0px;
 }
 
 .img_frame .container_car ul {
@@ -476,19 +534,24 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 }
 
 .img_frame .container_car ul li {
+  overflow: hidden;
+
+  width: 100%;
   margin: 0px;
   padding: 0px;
-  width: 100%;
-  overflow: hidden;
 }
 
 .img_frame a.description {
   display: block;
+
   padding: 30px 2px;
-  color: #555;
-  line-height: 16px;
-  font-size: 12px;
+
   text-decoration: none;
+
+  color: #555;
+
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .img_frame a.description h4 {
@@ -501,6 +564,7 @@ How it works
 .howItWorks {
   width: 100%;
   min-height: 400px;
+
   text-align: center;
 }
 
@@ -509,9 +573,10 @@ How it works
 }
 
 .howItWorks ol {
-  text-align: left;
   margin-top: 17px;
   margin-left: 50px;
+
+  text-align: left;
 }
 
 .howItWorks ol li {
@@ -523,13 +588,15 @@ How it works
 }
 
 .starPoint li:before {
-  content: "* ";
   margin-left: -35px;
+
+  content: "* ";
 }
 
 .doubleStarPoint li:before {
-  content: "**";
   margin-left: -35px;
+
+  content: "**";
 }
 
 /* ==========================================================================
@@ -538,34 +605,39 @@ Projects
 .projects {
   width: 100%;
   min-height: 100px;
+
   text-align: left;
+
   background: aliceblue;
 }
 
 .projects__wrapper {
   display: inline-block;
+
+  width: 100%;
   margin-left: 40px;
   padding-bottom: 20px;
-  width: 100%;
 }
 
 .projects__wrapper li {
   padding-top: 10px;
+
   font-size: 20px;
 }
 
 .projects__wrapper li input {
   margin-left: 20px;
+  padding: 7px;
+
+  color: white;
   border: none;
   border-radius: 8px;
-  padding: 7px;
   background: linear-gradient(to top, #a6206a, #af3779);
-  color: white;
 }
 
 .projects__wrapper li input:hover{
-  background: linear-gradient(to top, #f2a585, #e66929);
   color: black;
+  background: linear-gradient(to top, #f2a585, #e66929);
 }
 
 /* ==========================================================================
@@ -575,15 +647,19 @@ About us
   width: 100%;
   height: 600px;
   margin: 0 auto;
+
   text-align: center;
+
   background: grey;
 }
 
 .contact__wrapper {
   display: inline-block;
+
   width: 200px;
   height: 315px;
   margin: 25px 13px 0px 13px;
+
   background: white;
 }
 
@@ -621,27 +697,31 @@ Contacts
 .contacts{
   width: 100%;
   height:200px;
+
   background: url("../img/map.jpg");
 }
 
 .contacts .wrapper__contacts{
-  margin: 0 auto;
   width: 1000px;
+  margin: 0 auto;
 }
 
 .contacts .wrapper__contacts div{
   float: left;
-  margin-right: 20px;
-  margin-top: 61px;
-  color: #f28934;
-  line-height: 20px;
+
   height: 78px;
+  margin-top: 61px;
+  margin-right: 20px;
+
+  color: #f28934;
+
+  line-height: 20px;
 }
 
 .contacts .wrapper__contacts .social{
-  margin-top: 61px;
   width: 200px;
   height: 20px;
+  margin-top: 61px;
 }
 
 .contacts .social a{
@@ -649,12 +729,12 @@ Contacts
 }
 
 .contacts .social ul li{
-  margin-left: 10px;
  float: left;
+
+  margin-left: 10px;
+
   list-style-type: none;
 }
-
-
 
 /* ==========================================================================
 Reviews
@@ -664,7 +744,9 @@ Reviews
   width: 100%;
   min-height: 715px;
   margin: 0 auto;
+
   text-align: center;
+
   background: #ed6300;
 }
 
@@ -694,51 +776,63 @@ Reviews
 .reviews .container_car ul{
   width: 200px;
   margin: 0 auto;
+
   list-style-type: none;
 }
 
 .reviews .container_car ul li{
   height: 200px;
+
   border-radius: 100px;
 }
 
 .reviews-img_frame {
+  display: inline-block;
+
   width: 320px;
   height: 550px;
-  display: inline-block;
   margin: 3px;
   padding: 5px;
-  line-height: 0px;
-  background-color: #f8f8f8;
+
   border: none;
   border-bottom: 3px solid #ed6300;
+  background-color: #f8f8f8;
   box-shadow:none;
+
+  line-height: 0px;
 }
 
 .reviews-img_frame p {
-  line-height: 20px;
-  text-align: left;
   margin-bottom: 10px;
   margin-left: 10px;
+
+  text-align: left;
+
+  line-height: 20px;
 }
 
 .reviews .sh{
-  text-decoration: none;
-  color: #ed6300;
-  float: right;
-  margin: 20px 10px 0 0;
   display: none;
+  float: right;
+
+  margin: 20px 10px 0 0;
+
+  text-decoration: none;
+
+  color: #ed6300;
 }
 
 .reviews .sh:hover{
   text-decoration: underline;
+
   color: #0000cc;
 }
 
 .reviews .container-image{
+  overflow: hidden;
+
   border-radius: 100px;
   background: greenyellow;
-  overflow: hidden;
 }
 
 .reviews ul.carousel_items li ul li {

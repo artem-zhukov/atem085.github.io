@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var csscomb = require('gulp-csscomb');
 var bower = require('gulp-bower');
+var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('default', ['watch']);
@@ -10,6 +11,10 @@ gulp.task('default', ['watch']);
 gulp.task('css', function () {
     return gulp.src('styles/**/*.scss')
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('styles'));
 });
 

@@ -2,16 +2,13 @@ p, h1, h3, h4, h5, a {
   font-family: "Helvetic Neue", Helvetica, Arial; }
 
 h1 {
-  font-size: 48px;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-size: 48px; }
 
 h3 {
   font-size: 30px; }
 
-/*.topMenu-wrapper{
-  background: #ed6300;
-}*/
 .mainFrame {
   width: 1150px;
   margin: 0 auto; }
@@ -20,41 +17,35 @@ h3 {
 Navigation
 ========================================================================== */
 nav {
-  background-color: #242830;
-  margin-top: -1px;
-  left: 627px;
-  top: 29px;
   position: absolute;
-  width: 219px; }
+  top: 29px;
+  left: 627px;
+  width: 219px;
+  margin-top: -1px;
+  background-color: #242830; }
 
 nav ul {
-  list-style: none;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 nav ul li {
-  color: rgba(255, 255, 255, 0.6);
+  position: relative;
   display: block;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   padding-left: 0;
-  position: relative; }
+  transition: all 0.5s ease;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
 
 nav ul li:last-child {
   border: none; }
 
 nav ul li a {
-  color: rgba(255, 255, 255, 0.6);
+  position: relative;
   display: block;
   padding: 8px;
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   padding-left: 0;
-  position: relative; }
+  transition: all 0.5s ease;
+  color: rgba(255, 255, 255, 0.6); }
 
 nav ul li a:hover, nav ul li a:focus {
   text-decoration: none;
@@ -62,25 +53,23 @@ nav ul li a:hover, nav ul li a:focus {
 
 #nav-toggle {
   position: absolute;
-  right: 15px;
-  top: 0; }
+  top: 0;
+  right: 15px; }
 
 #nav-toggle {
-  cursor: pointer;
-  padding: 10px 35px 16px 0px; }
+  padding: 10px 35px 16px 0px;
+  cursor: pointer; }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -o-border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #353535;
   position: absolute;
   display: block;
-  content: ''; }
+  width: 35px;
+  height: 5px;
+  content: '';
+  cursor: pointer;
+  border-radius: 1px;
+  background: #353535;
+  -o-border-radius: 1px; }
 
 #nav-toggle span:before {
   top: -10px; }
@@ -89,10 +78,7 @@ nav ul li a:hover, nav ul li a:focus {
   bottom: -10px; }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out; }
+  transition: all 500ms ease-in-out; }
 
 #nav-toggle.active span {
   background-color: transparent; }
@@ -101,15 +87,11 @@ nav ul li a:hover, nav ul li a:focus {
   top: 0; }
 
 #nav-toggle.active span:before {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg); }
+  transform: rotate(45deg); }
 
 #nav-toggle.active span:after {
-  transform: translateY(-10px) rotate(-45deg);
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  -ms-transform: translateY(-10px) rotate(-45deg);
-  top: 10px; }
+  top: 10px;
+  transform: translateY(-10px) rotate(-45deg); }
 
 .navicon {
   position: relative;
@@ -137,11 +119,11 @@ header {
   margin: 0 auto; }
 
 .wrapper__topMenu {
-  width: 100%;
-  background: #ed6300;
   position: fixed;
+  z-index: 5;
+  width: 100%;
   height: 56px;
-  z-index: 5; }
+  background: #ed6300; }
 
 .wrapper__logo {
   float: left;
@@ -163,9 +145,9 @@ header {
 
 .topMenu li {
   float: left;
-  background: linear-gradient(to top, #a6206a, #af3779);
   padding: 15px 0 15px 0px;
-  border-left: 2px solid #e174b1; }
+  border-left: 2px solid #e174b1;
+  background: linear-gradient(to top, #a6206a, #af3779); }
 
 .topMenu li:nth-child(1) {
   border-left: none;
@@ -199,10 +181,6 @@ header {
   color: #fff;
   font-size: 45px; }
 
-/*
-header button {
-  margin-left: 10%;
-}*/
 /* ==========================================================================
 TagLine
 ========================================================================== */
@@ -229,16 +207,16 @@ TagLine
   width: 500px; }
 
 #sendContactClient {
-  margin: 0 auto;
   display: block;
-  height: 40px;
   width: 100px;
+  height: 40px;
+  margin: 0 auto;
   margin-top: 18px;
-  background: linear-gradient(to top, #a6206a, #af3779);
-  font-family: "Helvetic Neue", Helvetica, Arial;
+  color: white;
   border: none;
   border-radius: 15px;
-  color: white; }
+  background: linear-gradient(to top, #a6206a, #af3779);
+  font-family: "Helvetic Neue", Helvetica, Arial; }
 
 #sendContactClient:hover {
   background: linear-gradient(to top, #f2a585, #e66929); }
@@ -255,20 +233,20 @@ CanDo
   color: #ed6300; }
 
 .wrapper__parallax {
+  position: relative;
   width: 100%;
   min-height: 400px;
-  background: rgba(27, 8, 45, 0.5);
-  position: relative; }
+  background: rgba(27, 8, 45, 0.5); }
 
 .parallax-window {
   height: 400px;
   background: transparent; }
 
 .wrapper__canDoIcon {
-  width: 300px;
-  min-height: 300px;
   position: absolute;
   top: 50%;
+  width: 300px;
+  min-height: 300px;
   margin-top: -125px; }
 
 .wrapper__canDoIcon p {
@@ -284,22 +262,20 @@ CanDo
   margin-left: 150px; }
 
 .icon {
-  height: 175px;
-  width: 175px;
-  line-height: 175px;
-  max-width: 100%;
-  background: #ed6300;
-  border-radius: 50%;
-  -o-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+  position: relative;
   display: block;
-  color: #fff;
-  font-size: 55px;
+  width: 175px;
+  max-width: 100%;
+  height: 175px;
+  margin: 0 auto 50px;
   text-align: center;
   vertical-align: middle;
-  position: relative;
-  margin: 0 auto 50px; }
+  color: #fff;
+  border-radius: 50%;
+  background: #ed6300;
+  font-size: 55px;
+  line-height: 175px;
+  -o-border-radius: 50%; }
 
 /* ==========================================================================
 Our team
@@ -320,10 +296,10 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
   overflow: hidden; }
 
 .clear {
-  clear: both;
   display: block;
-  overflow: hidden;
   visibility: hidden;
+  clear: both;
+  overflow: hidden;
   width: 0;
   height: 0; }
 
@@ -331,30 +307,27 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
   position: relative;
   margin: 0 auto;
   padding: 20px;
-  padding-left: 70px;
   padding-right: 51px;
+  padding-left: 70px;
   background: white; }
 
 .carousel, .carousel_mask {
   width: 1046px; }
 
 .carousel_btn_left, .carousel_btn_right {
-  display: none;
   position: absolute;
-  background: url("../img/slider-left.png") no-repeat;
+  top: 50px;
+  display: none;
   width: 62px;
   height: 76px;
-  top: 50px; }
+  background: url("../img/slider-left.png") no-repeat; }
 
-/*.carousel_btn_left:hover, .carousel_btn_right:hover{
-  opacity: 0.6;
-}*/
 .carousel_btn_left {
   left: -13px; }
 
 .carousel_btn_right {
-  background: url("../img/slider-right.png") no-repeat 0px 0px;
-  right: -15px; }
+  right: -15px;
+  background: url("../img/slider-right.png") no-repeat 0px 0px; }
 
 .carousel_btn_left:active, .carousel_btn_right:active {
   margin-top: 1px; }
@@ -382,29 +355,28 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
   display: inline-block;
   margin: 0px;
   padding: 5px;
-  background-color: #fff;
-  line-height: 0px;
   border: 1px solid #c0c1c2;
-  -moz-border-radius: 3px;
   border-radius: 3px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12); }
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+  line-height: 0px; }
 
 .img_frame .container_car ul {
   position: absolute; }
 
 .img_frame .container_car ul li {
-  margin: 0px;
-  padding: 0px;
+  overflow: hidden;
   width: 100%;
-  overflow: hidden; }
+  margin: 0px;
+  padding: 0px; }
 
 .img_frame a.description {
   display: block;
   padding: 30px 2px;
+  text-decoration: none;
   color: #555;
-  line-height: 16px;
   font-size: 12px;
-  text-decoration: none; }
+  line-height: 16px; }
 
 .img_frame a.description h4 {
   padding: 0px; }
@@ -421,9 +393,9 @@ How it works
   padding-bottom: 20px; }
 
 .howItWorks ol {
-  text-align: left;
   margin-top: 17px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  text-align: left; }
 
 .howItWorks ol li {
   margin-left: 35px; }
@@ -432,12 +404,12 @@ How it works
   list-style-type: none; }
 
 .starPoint li:before {
-  content: "* ";
-  margin-left: -35px; }
+  margin-left: -35px;
+  content: "* "; }
 
 .doubleStarPoint li:before {
-  content: "**";
-  margin-left: -35px; }
+  margin-left: -35px;
+  content: "**"; }
 
 /* ==========================================================================
 Projects
@@ -450,9 +422,9 @@ Projects
 
 .projects__wrapper {
   display: inline-block;
+  width: 100%;
   margin-left: 40px;
-  padding-bottom: 20px;
-  width: 100%; }
+  padding-bottom: 20px; }
 
 .projects__wrapper li {
   padding-top: 10px;
@@ -460,15 +432,15 @@ Projects
 
 .projects__wrapper li input {
   margin-left: 20px;
+  padding: 7px;
+  color: white;
   border: none;
   border-radius: 8px;
-  padding: 7px;
-  background: linear-gradient(to top, #a6206a, #af3779);
-  color: white; }
+  background: linear-gradient(to top, #a6206a, #af3779); }
 
 .projects__wrapper li input:hover {
-  background: linear-gradient(to top, #f2a585, #e66929);
-  color: black; }
+  color: black;
+  background: linear-gradient(to top, #f2a585, #e66929); }
 
 /* ==========================================================================
 About us
@@ -518,28 +490,28 @@ Contacts
   background: url("../img/map.jpg"); }
 
 .contacts .wrapper__contacts {
-  margin: 0 auto;
-  width: 1000px; }
+  width: 1000px;
+  margin: 0 auto; }
 
 .contacts .wrapper__contacts div {
   float: left;
-  margin-right: 20px;
+  height: 78px;
   margin-top: 61px;
+  margin-right: 20px;
   color: #f28934;
-  line-height: 20px;
-  height: 78px; }
+  line-height: 20px; }
 
 .contacts .wrapper__contacts .social {
-  margin-top: 61px;
   width: 200px;
-  height: 20px; }
+  height: 20px;
+  margin-top: 61px; }
 
 .contacts .social a {
   color: #f28934; }
 
 .contacts .social ul li {
-  margin-left: 10px;
   float: left;
+  margin-left: 10px;
   list-style-type: none; }
 
 /* ==========================================================================
@@ -580,38 +552,38 @@ Reviews
   border-radius: 100px; }
 
 .reviews-img_frame {
+  display: inline-block;
   width: 320px;
   height: 550px;
-  display: inline-block;
   margin: 3px;
   padding: 5px;
-  line-height: 0px;
-  background-color: #f8f8f8;
   border: none;
   border-bottom: 3px solid #ed6300;
-  box-shadow: none; }
+  background-color: #f8f8f8;
+  box-shadow: none;
+  line-height: 0px; }
 
 .reviews-img_frame p {
-  line-height: 20px;
-  text-align: left;
   margin-bottom: 10px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  text-align: left;
+  line-height: 20px; }
 
 .reviews .sh {
-  text-decoration: none;
-  color: #ed6300;
+  display: none;
   float: right;
   margin: 20px 10px 0 0;
-  display: none; }
+  text-decoration: none;
+  color: #ed6300; }
 
 .reviews .sh:hover {
   text-decoration: underline;
   color: #0000cc; }
 
 .reviews .container-image {
+  overflow: hidden;
   border-radius: 100px;
-  background: greenyellow;
-  overflow: hidden; }
+  background: greenyellow; }
 
 .reviews ul.carousel_items li ul li {
   margin: 0; }
