@@ -21,7 +21,11 @@ Navigation
 ========================================================================== */
 nav {
   background-color: #242830;
-  margin-top: -1px; }
+  margin-top: -1px;
+  left: 627px;
+  top: 29px;
+  position: absolute;
+  width: 219px; }
 
 nav ul {
   list-style: none;
@@ -44,7 +48,7 @@ nav ul li:last-child {
 nav ul li a {
   color: rgba(255, 255, 255, 0.6);
   display: block;
-  padding: 20px;
+  padding: 8px;
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -110,7 +114,7 @@ nav ul li a:hover, nav ul li a:focus {
 .navicon {
   position: relative;
   height: 26px;
-  margin-top: -55px; }
+  margin-top: 10px; }
 
 .indicator {
   position: absolute;
