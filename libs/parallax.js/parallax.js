@@ -125,6 +125,7 @@
       sliderExisted = true;
     }
 
+
     this.$mirror.addClass('parallax-mirror').css({
       visibility: 'hidden',
       zIndex: this.zIndex,
@@ -231,6 +232,8 @@
       } else {
         this.visibility = 'hidden';
       }
+
+      $('.parallax-mirror').offset();
 
       this.$mirror.css({
         transform: 'translate3d(0px, 0px, 0px)',

@@ -3,18 +3,13 @@ p, h1, h3,h4, h5, a {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
-}
-
-header {
-  width: 100%;
-  height: 400px;
-  margin: 0 auto;
-  background: #ed6300;
 }
 
 /*.topMenu-wrapper{
@@ -152,9 +147,17 @@ nav ul li a:hover, nav ul li a:focus {
 /* ==========================================================================
 Header
 ========================================================================== */
+
+header {
+  width: 100%;
+  height: 56px;
+  margin: 0 auto;
+  background: #ed6300;
+}
+
+
 .menu__wrapper {
   width: 1150px;
-  height: 80px;
   margin: 0 auto;
 }
 
@@ -162,15 +165,13 @@ Header
   width: 100%;
   background: #ed6300;
   position: fixed;
-  height: 80px;
+  height: 56px;
   z-index:5;
-  border-bottom: 1px solid #f28934;
 }
 
 .wrapper__logo {
   float: left;
   width: 180px;
-  padding-top: 7px;
 }
 
 .menu__wrapper img {
@@ -179,10 +180,9 @@ Header
 }
 
 .mainMenu__wrapper {
-  width: 700px;
+  width: 100%;
   height: 50px;
   margin: auto;
-  padding-top: 33px;
 }
 
 .topMenu {
@@ -193,19 +193,34 @@ Header
 
 .topMenu li {
   float: left;
+  background: linear-gradient(to top, #a6206a, #af3779);
+  padding: 15px 0 15px 0px;
+  border-left: 2px solid #e174b1;
 }
 
+.topMenu li:nth-child(1){
+  border-left:none;
+  border-radius: 0 0 0 10px;
+}
+
+.topMenu li:nth-child(8){
+  border-left:none;
+}
+
+.topMenu li:nth-child(7){
+  border-radius: 0 0 10px 0;
+}
+
+
 .topMenu li:hover {
-  padding: 5px;
-  margin: -5px;
-  background-color: #ec9137;
+  background: linear-gradient(to top, #f2a585, #e66929);
 }
 
 .topMenu > li > a {
-  padding: 12px 15px;
+  padding: 10px 10px;
   text-decoration: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 100;
   line-height: 18px;
 }
@@ -223,46 +238,90 @@ Header
   font-size: 45px;
 }
 
+
+/*
+header button {
+  margin-left: 10%;
+}*/
+
+/* ==========================================================================
+TagLine
+========================================================================== */
+
 .tagline {
-  width: 700px;
-  margin: 80px auto;
+  width: 100%;
+  height:250px;
+  background: #5d5c5c;
 }
 
 .tagline p {
+  padding-top: 36px;
   text-align: center;
   color: #fff;
-  font-size: 40px;
+  font-size: 31px;
 }
 
-header button {
-  margin-left: 10%;
+.tagline form{
+  width: 500px;
+  margin: 20px auto;
 }
+
+.tagline input{
+  background: linear-gradient(to top,#fff  ,#c6c4bc);
+  font-size: 20px;
+}
+
+.tagline .two{
+  width: 500px;
+}
+
+#sendContactClient{
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  width: 100px;
+  margin-top: 18px;
+  background: linear-gradient(to top, #a6206a, #af3779);
+  font-family: "Helvetic Neue", Helvetica, Arial;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+#sendContactClient:hover {
+  background: linear-gradient(to top, #f2a585, #e66929);
+}
+
+
 
 /* ==========================================================================
 CanDo
 ========================================================================== */
 .canDo {
   width: 100%;
-  height: 600px;
+  min-height: 400px;
   text-align: center;
+}
+
+.canDo h1{
+  color: #ed6300;
 }
 
 .wrapper__parallax {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   background: rgba(27, 8, 45, 0.5);
   position: relative;
 }
 
 .parallax-window {
-  margin-top: 88px;
-  min-height: 400px;
+  height: 400px;
   background: transparent;
 }
 
 .wrapper__canDoIcon {
   width: 300px;
-  height: 300px;
+  min-height: 300px;
   position: absolute;
   top: 50%;
   margin-top: -125px;
@@ -309,11 +368,14 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 
 .ourTeam {
   width: 100%;
-  height: 400px;
+  height: 480px;
   text-align: center;
-  background: yellow;
+  background: #a6206a;
 }
 
+.ourTeam h1{
+  color: #fff;
+}
 /* Carousel */
 .container_car {
   position: relative;
@@ -332,33 +394,36 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 .carousel {
   position: relative;
   margin: 0 auto;
-  padding: 0px 30px;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 51px;
+  background: white;
 }
 
 .carousel, .carousel_mask {
-  width: 1045px;
+  width: 1046px;
 }
 
 .carousel_btn_left, .carousel_btn_right {
   display: none;
   position: absolute;
-  background: url("../img/slider-left.png") no-repeat 0px 0px;
-  width: 29px;
-  height: 56px;
+  background: url("../img/slider-left.png") no-repeat;
+  width: 62px;
+  height: 76px;
   top: 50px;
 }
 
-.carousel_btn_left:hover, .carousel_btn_right:hover{
+/*.carousel_btn_left:hover, .carousel_btn_right:hover{
   opacity: 0.6;
-}
+}*/
 
 .carousel_btn_left {
-  left: -22px;
+  left: -13px;
 }
 
 .carousel_btn_right {
   background: url("../img/slider-right.png") no-repeat 0px 0px;
-  right: -14px;
+  right: -15px;
 }
 
 .carousel_btn_left:active, .carousel_btn_right:active {
@@ -415,8 +480,7 @@ http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
 
 .img_frame a.description {
   display: block;
-  padding: 5px 8px;
-/*  background-color: #ffd86a;*/
+  padding: 30px 2px;
   color: #555;
   line-height: 16px;
   font-size: 12px;
@@ -432,12 +496,17 @@ How it works
 ========================================================================== */
 .howItWorks {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   text-align: center;
+}
+
+.howItWorks .mainFrame{
+  padding-bottom: 20px;
 }
 
 .howItWorks ol {
   text-align: left;
+  margin-top: 17px;
   margin-left: 50px;
 }
 
@@ -473,15 +542,26 @@ Projects
   display: inline-block;
   margin-left: 40px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .projects__wrapper li {
-  padding-top: 20px;
+  padding-top: 10px;
+  font-size: 20px;
 }
 
 .projects__wrapper li input {
   margin-left: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  background: linear-gradient(to top, #a6206a, #af3779);
+  color: white;
+}
 
+.projects__wrapper li input:hover{
+  background: linear-gradient(to top, #f2a585, #e66929);
+  color: black;
 }
 
 /* ==========================================================================
@@ -578,10 +658,22 @@ Reviews
 
 .reviews{
   width: 100%;
-  height: 600px;
+  min-height: 715px;
   margin: 0 auto;
   text-align: center;
-  background: white;
+  background: #ed6300;
+}
+
+.reviews .course{
+  color: #ed6300;
+}
+
+.reviews h1{
+  color: white;
+}
+
+.wrapper__reviews{
+  padding-bottom: 20px;
 }
 
 /* Carousel */

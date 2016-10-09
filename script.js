@@ -33,16 +33,23 @@ function showAllText(obj) {
 }
 
 
+/*document.querySelector("#nav-toggle").addEventListener("click", function () {
+    this.classList.toggle("active");
+});*/
+
+$(function($){
+    $("#phone").mask("(999) 999-9999");
+});
+
+
+
 /*
- document.querySelector("#nav-toggle").addEventListener("click", function() {
- this.classList.toggle("active");
- });
+$(window).load(function () {
 
- $(window).load(function() {
+    $('.nav_slide_button').click(function () {
+        $('.pull').slideToggle();
+/!*        $('.parallax-mirror').offset({top:785});*!/
+    });
+});
+*/
 
- $('.nav_slide_button').click(function() {
- $('.pull').slideToggle();
- });
-
- });
- */
